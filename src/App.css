@@ -1,40 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 .App {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
-  color: white;
+  color: #eee;
 } /*../public/images/cv-main.jpg' */
 
 .main-title {
   font-size: 3rem;
   padding: 2rem 0 2rem 0;
-  background: linear-gradient(90deg, #ff6347, #d6c313);
+  margin: 0  0;
+  background: linear-gradient(135deg, #ff634700 5%,  #ff6347 25%,  #d67b13 70%, #d6c31300 90%);
   border-radius: 20px;
 }
 
-.main-title:after {
-  display: block;
-  width: 20px;
-  height: 20px;
-  color:green;
+.main-title::before {
+  content: '|';
+  color: #ff6347aa;
+  background: #ff6347aa;
+  filter: blur(3px);
+  display: inline-block;
+  width: 5%;
+  border-radius: 50%;
+  border: solid .05rem rgb(255, 238, 0);
+  -webkit-box-shadow: -24px 0px 15px 7px #d6c313aa; 
+  box-shadow: -24px 0px 15px 7px #d6c313aa;
 
 }
 
-.bg {
+.main-title span::after
+ {
+  content: '';
+  display: block;
+  /*border: .1rem solid linear-gradient(90deg, #d6c313, #ff6347);*/
+  height: .15em;
+  background: linear-gradient(90deg, #0000, #d6c31377, #ff634777, #0000);
+  width: 100%;
+  color: #0000;
+}
+
+/*.btn::after {
+  content: '';
+  width:20px;
+  height:20px;
+  color:chocolate;
+  
+}
+*/
+
+
+.textbox {
+  padding: 3.5rem 0 0 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
-.content {
-
+.welcome-text {
+  width: 50%;
+  text-shadow: 1px -1px 0 #767676;
+  font-family: 'Marck Script', cursive;
+  color: #222;
+  font-size: 1.7rem;
 }
+
 
 .btn-box {
-
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .btn {
+
   cursor: pointer;
   margin: 2rem;
   border-radius: 16px;
@@ -47,6 +90,19 @@
 .btn-info {
   background: linear-gradient(90deg, #62c3d4, #4bc0d4);
   border: .2rem solid #49a1db;
+  margin-top: 12rem;
+}
+
+.btn-start {
+  background: linear-gradient(90deg, #ff6347, #d67b13 );
+  border: .2rem solid  #d67b13;
+  margin-top: 6rem;
+}
+
+.btn-prev {
+  background: linear-gradient(90deg, #62c3d4, #4bc0d4);
+  border: .2rem solid #49a1db;
+  margin-top: 18rem;
 }
 
 
