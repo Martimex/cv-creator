@@ -1,13 +1,26 @@
 import logo from './logo.svg';
 import bgphoto_main from './images/cv-bg-main.jpg';
 import './App.css';
+import './icons/fontello/css/fontello.css';
+import React from 'react';
+
 
 function App() {
+
+  const startTheApp = function(message) {console.log(message)};
+  const lookupInfo = function() {};
+  const lookupPrev = function() {};
+
+  {/*class App extends React.Component {
+
+    constructor(props) {
+      super(props);
+      this.state = { attribute: "value" };
+    }
+  }*/}
+
   return (
     <div className="App"> 
-
-
-
 
       <div className="layer" style={{ backgroundImage: `url(${bgphoto_main})`, backgroundRepeat: `no-repeat`, backgroundPosition: `center`, minHeight: `100vh`}}> 
 
@@ -31,12 +44,26 @@ function App() {
           </span>
         </div>
 
-        <div className="btn-box">
 
-          <button className="btn btn-start"> Start </button>
-          <button className="btn btn-info"> Info </button>
-          <button className="btn btn-prev"> Zanim zaczniesz </button>
+        <button className="btn-start" onClick={() => {startTheApp('function fired'); {/*this.setState({attribute: 'new value'})*/}}}> Start </button>
+
+        <div className="info-box">
+          <i className="icon-info"> </i>
+          {/*<button className="btn btn-info"> Info </button>*/}
+          <span className="description">Dowiedz się więcej o tej aplikacji i jej autorze. W razie pytań lub wątpliwości znajdziesz tu także 
+           niezbędne informacje kontaktowe </span>
         </div>
+
+        <div className="prev-box">
+          <i className="icon-doc"> </i>
+         {/*<button className="btn btn-prev"> Zanim zaczniesz </button>*/}
+          <span className="description">Zanim rozpoczniesz tworzenie CV, zapoznaj się z przygotowanym przez nas poradnikiem, który pomoże
+          Ci stworzyć idealne CV </span>
+
+        </div>
+
+        <footer className="empty-space"> </footer>
+
       </div>
     </div>  
   );

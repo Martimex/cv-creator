@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #753b01;
   min-height: 100vh;
   color: #eee;
 } /*../public/images/cv-main.jpg' */
@@ -12,6 +12,7 @@
   padding: 2rem 0 2rem 0;
   margin: 0  0;
   background: linear-gradient(135deg, #ff634700 5%,  #ff6347 25%,  #d67b13 70%, #d6c31300 90%);
+  background-size: contain;
   border-radius: 20px;
 }
 
@@ -68,13 +69,31 @@
 }
 
 
-.btn-box {
+.info-box {
   display:flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
+  padding: 0 25% 0 20%;
+  margin: 3rem 0 3rem 0;
+
 }
+
+.prev-box {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25% 0 20%;
+
+}
+
+/* .info-box::after, .prev-box::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: .2rem;
+  background-color: tomato;
+  color: tomato;
+} */
 
 .btn {
 
@@ -84,37 +103,60 @@
   width: 9rem;
   height: 3rem;
   color: #222;
-  font-weight: 650;
+}
+
+.btn-start {
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff6347, #d67b13 );
+  border: .2rem solid  #d67b13;
+  margin-top: 6rem;
+  border-radius: 16px;
+  font-weight: 500;
+  width: 18rem;
+  height: 6rem;
+  color: #eee;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .btn-info {
   background: linear-gradient(90deg, #62c3d4, #4bc0d4);
   border: .2rem solid #49a1db;
-  margin-top: 12rem;
+  font-weight: 650;
 }
 
-.btn-start {
-  background: linear-gradient(90deg, #ff6347, #d67b13 );
-  border: .2rem solid  #d67b13;
-  margin-top: 6rem;
+.icon-info {
+  font-size: 5rem;
+  color: #eee;
+  background:linear-gradient(90deg, #ff6347, #d67b13);
+  border-radius: 50%;
+}
+
+.icon-doc {
+  font-size: 5rem;
+  color: #eee;
+  background:linear-gradient(90deg, #ff6347, #d67b13);
+  border-radius: 50%;
+}
+
+.description {
+  font-family: 'Marck Script', cursive;
+  font-size: 1.5rem;
+  color: #222;
+  margin-left: 1rem;
 }
 
 .btn-prev {
   background: linear-gradient(90deg, #62c3d4, #4bc0d4);
   border: .2rem solid #49a1db;
-  margin-top: 18rem;
+  font-weight: 650;
 }
 
 
-.App-header {
-
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  font-size: calc(10px + 2vmin);
+.empty-space {
+  padding: 4rem 0 0 0;
 }
-
 
 
 
